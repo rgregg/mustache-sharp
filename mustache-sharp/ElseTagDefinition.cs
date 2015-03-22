@@ -6,7 +6,7 @@ namespace Mustache
     /// <summary>
     /// Defines a tag that renders its content if all preceding if and elif tags.
     /// </summary>
-    internal sealed class ElseTagDefinition : ContentTagDefinition
+    public class ElseTagDefinition : ContentTagDefinition
     {
         /// <summary>
         /// Initializes a new instance of a ElseTagDefinition.

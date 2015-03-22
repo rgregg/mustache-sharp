@@ -6,7 +6,7 @@ namespace Mustache
     /// <summary>
     /// Defines a tag that conditionally renders its content if preceding if and elif tags fail.
     /// </summary>
-    internal sealed class ElifTagDefinition : ConditionTagDefinition
+    public class ElifTagDefinition : ConditionTagDefinition
     {
         /// <summary>
         /// Initializes a new instance of an ElifTagDefinition.

@@ -8,7 +8,7 @@ namespace Mustache
     /// <summary>
     /// Defines a tag that conditionally prints its content.
     /// </summary>
-    internal abstract class ConditionTagDefinition : ContentTagDefinition
+    public abstract class ConditionTagDefinition : ContentTagDefinition
     {
         private const string conditionParameter = "condition";
 

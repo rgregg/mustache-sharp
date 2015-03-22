@@ -71,12 +71,13 @@ namespace Mustache
             {
                 throw new ArgumentNullException("definition");
             }
-            if (_tagLookup.ContainsKey(definition.Name))
-            {
-                string message = String.Format(Resources.DuplicateTagDefinition, definition.Name);
-                throw new ArgumentException(message, "definition");
-            }
-            _tagLookup.Add(definition.Name, definition);
+            //if (_tagLookup.ContainsKey(definition.Name))
+            //{
+            //    string message = String.Format(Resources.DuplicateTagDefinition, definition.Name);
+            //    throw new ArgumentException(message, "definition");
+            //}
+            //_tagLookup.Add(definition.Name, definition);
+            _tagLookup[definition.Name] = definition;
         }
 
         /// <summary>
