@@ -8,7 +8,7 @@ namespace Mustache
     /// </summary>
     internal static class RegexHelper
     {
-        public const string Key = @"[_\w][_\w\d]*";
+        public const string Key = @"[-_\w][-_\w\d]*";
         public const string String = @"'.*?'";
         public const string Number = @"[-+]?\d*\.?\d+";
         public const string CompoundKey = "@?" + Key + @"(?:\." + Key + ")*";
